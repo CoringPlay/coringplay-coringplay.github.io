@@ -1,0 +1,326 @@
+html {
+	background-color: #333;
+	color: #ddd;
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+	max-width: 1000px;
+	margin: auto;
+}
+
+hr {
+	background-color: #f9a;
+	border: none;
+	height: 1px;
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+a {
+	color: #f9a;
+}
+
+hr::after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	background-color: #f9a;
+	border: 12px solid #333;
+	border-radius: 100000px;
+	left: calc(50% - 16px);
+	margin-top: -15px;
+}
+
+#header {
+	margin-top: 20px;
+	text-align: center;
+}
+
+#subtitle {
+	margin-bottom: 15px;
+}
+
+#title {
+	font-size: 80px;
+	margin-bottom: -10px;
+	font-weight: 100;
+}
+
+#navbar {
+	text-align: center;
+}
+
+.navbar-link {
+	display: inline-block;
+	color: #f9a;
+	text-decoration: none;
+	margin-top: 6px;
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.selected::before {
+	content: "[ ";
+	font-weight: 700;
+}
+
+.selected::after {
+	content: " ]";
+	font-weight: 700;
+}
+
+.rounded-button, .donate-button {
+	border-radius: 33px;
+	transition: background-color 0.5s, box-shadow 0.5s;
+	border: 1px solid #555;
+}
+
+.rounded-button:hover, .donate-button:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+	box-shadow: 0px 2px 3px rgba(255, 255, 255, 0.1);
+}
+
+#main-container {
+	margin-top: 20px;
+	min-height: calc(100vh - 340px);
+}
+
+#footer {
+	bottom: 0;
+	padding-bottom: 10px;
+	width: 1000px;
+}
+
+.social-link {
+	display: inline-block;
+	text-align: center;
+	width: 36px;
+	height: 36px;
+	border: 1px solid #555;
+	border-radius: 20px;
+	margin: 0px 8px 12px 0px;
+}
+
+.social-link img {
+	margin-top: 9px;
+	width: 18px;
+}
+
+#social-banner {
+	display: inline-block;
+}
+
+#footer {
+	color: #888;
+}
+
+#footer-info {
+	display: inline-block;
+	text-align: left;
+	vertical-align: top;
+}
+
+#footer-right {
+	float: right;
+}
+
+#quote::before, #quote::after {
+	content: "\"";
+}
+
+#footer-yay {
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+	margin-left: 6px;
+}
+
+#footer-yay img {
+	height: 36px;
+}
+
+.info-sheet {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.info-header {
+	text-align: left;
+	margin-left: 100px;
+	color: #aaa;
+}
+
+.info-right .info-header {
+	margin-left: 60px;
+}
+
+.info-panel, .blog-post, .project {
+	padding: 12px;
+	width: 800px;
+	margin: auto;
+	border: 1px solid #494949;
+	background-color: #373737;
+	border-radius: 33px;
+	padding-left: 40px;
+}
+
+.info-cell {
+	display: inline-block;
+	width: 140px;
+	height: 40px;
+}
+
+.info-cell i {
+	font-style: normal;
+	display: block;
+	text-align: left;
+	color: #aaa;
+}
+
+.info-image {
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	height: 120px;
+	border-radius: 100px;
+	z-index: 1;
+}
+
+.info-right {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: -52px;
+	z-index: 0;
+}
+
+.info-panel-separator {
+	display: block;
+	height: 1px;
+	width: calc(100% - 40px);
+	margin-top: 12px;
+	margin-bottom: 12px;
+	background-color: #666;
+}
+
+.blog-post {
+	margin-bottom: 20px;
+}
+
+.blog-post-title { 
+	font-size: 30px;  
+}
+
+.blog-post-title a {
+	text-decoration: none;
+}
+
+.blog-post-date {
+	text-align: right;
+	color: #999;
+	margin-right: 12px;
+}
+
+.blog-post-contents {
+	display: none;
+}
+
+.blog-post hr::after {
+	border: 12px solid #373737;
+}
+
+#donate-images {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.donate-button {
+	display: inline-block;
+	background-color: #ddd;
+	border: none;
+	margin: 0px 30px 0px 30px;
+}
+
+.donate-button:hover {
+	background-color: white;
+	box-shadow: 0px 0px 5px 3px #f9a;
+}
+
+.project {
+	margin-bottom: 20px;
+}
+
+.project a {
+	color: #f9a;
+	text-decoration: none;
+}
+
+.project-logo {
+	display: inline-block;
+	vertical-align: top;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	margin-right: 30px;
+}
+
+.project-logo img {
+	width: 100px;	
+}
+
+.rounded-logo img {
+	border-radius: 10000px;
+}
+
+.project-info {
+	display: inline-block;
+	vertical-align: top;
+	width: auto;
+	max-width: 650px;
+}
+
+.project-name {
+	font-size: 30px;
+	margin-bottom: 8px;
+	border-bottom: solid 1px #666;
+}
+
+.project-desc {
+	color: #ddd;
+	min-width: 650px;
+}
+
+.category-separator {
+	text-align: center;
+	font-size: 40px;
+	margin: 20px;
+}
+
+.faq-container li {
+	margin-bottom: 20px;
+}
+
+#sellout {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+#sellout img {
+	width: 300px;
+}
+
+#patreon-plug-img {
+	margin: 30px;
+	text-align: center;
+}
+
+#patreon-plug-img img {
+	height: 500px;
+	border: 2px solid #666;
+}
