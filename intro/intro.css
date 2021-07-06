@@ -5,10 +5,10 @@ html {
     --main-color: #ddd;
     --muted-color: #DDDDDD;
 
-	--rainbow1: #00FF3C;
+	--rainbow1: #b9cc33;
 	--rainbow2: #ffe9a8;
     --rainbow3: #d4ffa8;
-	--rainbow4: #a8ffd4;
+	--rainbow4: #5397ac;
 	--rainbow5: #a8daff;
 	--rainbow6: #e3a8ff;
 }
@@ -284,4 +284,143 @@ body {
 		margin-left: 20px;
 	}
 
+}
+footer
+{
+	position: relative;
+	width: 100%;
+	height: auto;
+/* 	padding: 50px 100px; */
+	background: #2b2e4a;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+footer .container
+{
+	display: flex;
+	justify-content: space-between;
+
+	flex-direction: row;
+}
+footer .container .sec
+{
+	margin-right: 30px;
+}
+footer .container .sec.abountus
+{
+	width: 30%;
+}
+footer .container h2
+{
+	position: relative;
+	color: #fff;
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+footer .container h2:before
+{
+	content: '';
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	width: 50px;
+	height: 2px;
+	background: #e9967a;
+}
+footer .container .sec.aboutus p
+{
+	color: #999;
+}
+.sci
+{
+	margin-top: 20px;
+	display: flex;
+}
+.sci li
+{
+	list-style: none;
+}
+.sci li a
+{
+	transition: all 0.15s ease;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background: #222;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 10px;
+	text-decoration: none;
+	border-radius: 5px;
+}
+.sci li a:hover
+{
+	transition: all 0.15s ease;
+	background: #6699cc;
+}
+.sci li a .fa
+{
+	color: #fff;
+	font-size: 25px;
+}
+.sci li a .fa.fa-twitter
+{
+	color: #3368ff;
+}
+.sci li a .fa.fa-facebook
+{
+	color: #2655d9;
+}
+.sci li a .fa.fa-vk
+{
+	color: #3368ff;
+}
+.sci li a .fa.fa-github
+{
+	color: #ffffff;
+} 
+.quickLinks
+{
+	position: relative;
+	width: 25%;
+}
+.quickLinks ul li
+{
+	list-style: none;
+}
+.quickLinks ul li a
+{
+	transition: all 0.3s ease;
+	color: #999;
+	text-decoration: none;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+.quickLinks ul li a:hover
+{
+	transition: all 0.3s ease;
+	color: #fff;
+}
+@media (max-width: 584px)
+{
+	footer .container
+	{
+		flex-direction: column;
+	}
+	footer .container .sec 
+	{
+	    margin-right: 30px;
+	    margin-bottom: 40px;
+	}
+	footer .container .sec.abountus
+	{
+		width: 100%;
+	}
+	.quickLinks
+	{
+		position: relative;
+		width: 100%;
+	}
 }
