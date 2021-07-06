@@ -300,7 +300,8 @@ footer .container
 {
 	display: flex;
 	justify-content: space-between;
-
+	margin-left: 3%;
+	margin-right: 3%;
 	flex-direction: row;
 }
 footer .container .sec
